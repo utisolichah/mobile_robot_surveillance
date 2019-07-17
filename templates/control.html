@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<h1> ROBOT CONTROL PAGE </h1>
+<div class="infox">
+  <p>This project was built on Raspberry pi 3.
+    Support by opencv library and python programming.
+    use 2 dc motors, camera Logitech C525, driver motor L298 module,
+    and module step down from 12V to 5V. For controlling motor, use Rpi GPIO module.
+    please give any feedback to utisolichah07@gmail.com.thankyou.
+  </p>
+</div>
+
+<table align="center">
+  <tr>
+    <td></td>
+    <td>
+      <a href="/forward">
+      <button class="button">Forward</button>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>
+      <a href="/left">
+      <button class="button">Left</button>
+    </td>
+    <td align ="center">
+      <a href="/stop">
+      <button class="button button1">Stop</button>
+    </td>
+    <td>
+      <a href="/right">
+      <button class="button">Right</button>
+    </td>
+  <tr>
+    <td></td>
+    <td>
+      <a href="/reverse">
+      <button class="button">Reverse</button>
+    </td>
+    <td></td>
+
+{% endblock %}
